@@ -10,6 +10,11 @@
 		padding: 0px;
 	}
 
+	h1{
+		color: #1E951F;
+		text-decoration: bold;
+	}
+
 	a{
 		color: #FFFFFF;
 		text-decoration: none;
@@ -88,7 +93,7 @@
 		background-repeat: none;
 		float: left;
 		position: relative;
-		top: 57px;
+		top: 49px;
 	}
 
 	#tagline{
@@ -98,15 +103,15 @@
 		background-repeat: none;
 		float: right;
 		position: relative;
-		top: 157px;
+		top: 124px;
 	}
 
-
-	#content-body{
+<!--	#content-body{
 		height: 100%;
 		width: 1300px;
 		margin: 0 auto;
-	}
+		outline: #FF00FF dotted thick;
+	} -->
 
 	.addthis_toolbox{
 		position: relative;
@@ -116,17 +121,20 @@
 	}
 
 	#content-body-info{
-		position: static;
 		float: left;
+		position: relative;
+		top: 20px;
+		left: 20px;
 	}
 
 	#carousel{
-		height: 492px;
-		width: 702px;
+		height: 426px;
+		width: 640px;
 		background-image: url('https://dl.dropbox.com/s/ojt4kc40u6vukkb/smartphones.png');
-		float: right;
-		position: relative;
-		top: 5%;
+		background-repeat: none;
+		position: fixed;
+		bottom: 0px;
+		margin-left: 660px;
 	}
 
 	#footer{
@@ -166,7 +174,18 @@
 			<div id="logo"></div>
 			<div id="tagline"></div>
 		</div>
-		<div id="content-body">
+		<div id="content-body-info">
+			<h1>HEADER</h1>
+			<p> CONTENT
+			</p>
+			<form action="MAILTO:farfetch.info@gmail.com" method="POST" enctype="text/plain">
+				E-mail: <br><input type="text" name="mail" value="farfetchapp@gmail.com">
+				<input type="submit" value="Send">
+				<input type="reset" value="Reset">
+			</form>
+			<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521275ac25e4406f"></script>
+		</div>
 			<div class="addthis_toolbox addthis_floating_style addthis_32x32_style">
 				<a class="addthis_button_facebook"></a>
 				<a class="addthis_button_twitter"></a>
@@ -174,34 +193,24 @@
 				<a class="addthis_button_google_plusone_share"></a>
 				<a class="addthis_button_compact"></a>
 			</div>
-			<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521275ac25e4406f"></script>
-			<div id="content-body-info">
-				<form action="MAILTO:farfetch.info@gmail.com" method="POST" enctype="text/plain">
-					E-mail: <br><input type="text" name="mail" value="someone@example.com">
-					<input type="submit" value="Send">
-					<input type="reset" value="Reset">
-				</form>
-			</div>
-			<div id="carousel">
-			</div>
+		<div id="carousel">
 		</div>
 	</div>
-	<div id="footer">
-		<div class="footer-text" id="footer-links">
-			<a href="http://www.twitter.com/FarfetchApp">ABOUT US</a> | 
-			<a href="http://www.twitter.com/FarfetchApp">SUPPORT</a> | 
-			<a href="http://www.twitter.com/FarfetchApp">BLOG</a> | 
-			<a href="http://www.twitter.com/FarfetchApp">PRESS</a> | 
-			<a href="http://www.twitter.com/FarfetchApp">API</a> | 
-			<a href="http://www.twitter.com/FarfetchApp">JOBS</a> | 
-			<a href="http://www.twitter.com/FarfetchApp">PRIVACY</a> | 
-			<a href="http://www.twitter.com/FarfetchApp">TERMS</a>
+		<div id="footer">
+			<div class="footer-text" id="footer-links">
+				<a href="http://www.twitter.com/FarfetchApp">ABOUT US</a> | 
+				<a href="http://www.twitter.com/FarfetchApp">SUPPORT</a> | 
+				<a href="http://www.twitter.com/FarfetchApp">BLOG</a> | 
+				<a href="http://www.twitter.com/FarfetchApp">PRESS</a> | 
+				<a href="http://www.twitter.com/FarfetchApp">API</a> | 
+				<a href="http://www.twitter.com/FarfetchApp">JOBS</a> | 
+				<a href="http://www.twitter.com/FarfetchApp">PRIVACY</a> | 
+				<a href="http://www.twitter.com/FarfetchApp">TERMS</a>
+			</div>
+			<div class="footer-text" id="copyright">
+				© 2013 FARFETCH
+			</div>
 		</div>
-		<div class="footer-text" id="copyright">
-			© 2013 FARFETCH
-		</div>
-	</div>
 	</div>
 </body>
 </html>
