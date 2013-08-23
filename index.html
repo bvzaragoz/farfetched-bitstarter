@@ -10,31 +10,22 @@
 		padding: 0px;
 	}
 
-	h1{
-		color: #1E951F;
-		text-decoration: bold;
-	}
-
-	a{
-		color: #FFFFFF;
-		text-decoration: none;
-	}
 
 	a:hover{
 		color: #000000;
 	}
 
 	a:active{
-		color: #0000FF;
+		color: #FFFFFF;
 	}
 
-	#wrapper{
-		margin: 0px auto;
+	a:visited{
+		color: #FFFFFF;
 	}
 
 	#header{
+		height: 209px;
 		max-width: 100%;
-		height: 247px;
 		background-image: url('https://dl.dropbox.com/s/b3rehsi465sc5f7/clouds.gif');
 		background-repeat: repeat-x;
     		-webkit-animation: myanim 180s infinite linear;
@@ -70,13 +61,13 @@
 		margin: 0px 0px 0px -650px;
 	}	
 
-	#content-header{
-		height: 247px;
+	.content-header{
+		height: 209px;
 		width: 1300px;
 		margin: 0 auto;
 	}
 
-	#navigation_circles{
+	#theme{
 		height: 12px;
 		width: 87px;
 		background-image: url('https://dl.dropbox.com/s/n5e9rrsg9576rem/navigation_circles.png');
@@ -93,7 +84,7 @@
 		background-repeat: none;
 		float: left;
 		position: relative;
-		top: 49px;
+		top: 24px;
 	}
 
 	#tagline{
@@ -106,26 +97,40 @@
 		top: 124px;
 	}
 
-<!--	#content-body{
-		height: 100%;
-		width: 1300px;
-		margin: 0 auto;
-		outline: #FF00FF dotted thick;
-	} -->
-
 	.addthis_toolbox{
-		position: relative;
-		top: 5px;
-		left: 5px;
-		float: left;
+		margin-top: 279px;
 	}
 
 	#content-body-info{
-		float: left;
-		position: relative;
-		top: 20px;
-		left: 20px;
+		width: 371px;
+		margin-top: 279px;
+		margin-left: 130px;
 	}
+
+	.content-body-header{
+		font: 25px Verdana, sans-serif;
+		color: #371400;
+		text-decoration: bold;
+		outline: #A020F0 dotted thick;
+		height: 247px;
+		width: 450px;
+		margin-left: 60px;
+	}
+
+	.content-body-tagline{
+		font: 28px Verdana, sans-serif;
+		color: #1E951F;
+		text-decoration: bold;
+      	}
+
+	.content-body-text{
+		font: 18px Georgia, sans-serif;
+		color: #000000;
+		text-decoration: none;
+		width: 371px;
+		text-align: justify;
+		text-justify: inter-word;
+      	}
 
 	#carousel{
 		height: 426px;
@@ -156,6 +161,11 @@
 	#footer-links{
 		float: left;
 		margin-left: 29px;
+		color: #FFFFFF;
+	}
+
+	#footer-links.a{
+		color: #FFFFFF;
 	}
 
 	#copyright{
@@ -166,50 +176,49 @@
 	</style>
 </head>
 <body>
-	<div id="wrapper">
 	<div id="header"></div>
 	<div id="content">
 		<div id="content-header">
-			<div id="navigation_circles"></div>
+			<div id="theme"></div>
 			<div id="logo"></div>
 			<div id="tagline"></div>
 		</div>
-		<div id="content-body-info">
-			<h1>HEADER</h1>
-			<p> CONTENT
-			</p>
-			<form action="MAILTO:farfetch.info@gmail.com" method="POST" enctype="text/plain">
-				E-mail: <br><input type="text" name="mail" value="farfetchapp@gmail.com">
-				<input type="submit" value="Send">
-				<input type="reset" value="Reset">
-			</form>
-			<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521275ac25e4406f"></script>
+		<div class="addthis_toolbox addthis_floating_style addthis_32x32_style">
+			<a class="addthis_button_facebook"></a>
+			<a class="addthis_button_twitter"></a>
+			<a class="addthis_button_pinterest_share"></a>
+			<a class="addthis_button_google_plusone_share"></a>
+			<a class="addthis_button_compact"></a>
 		</div>
-			<div class="addthis_toolbox addthis_floating_style addthis_32x32_style">
-				<a class="addthis_button_facebook"></a>
-				<a class="addthis_button_twitter"></a>
-				<a class="addthis_button_pinterest_share"></a>
-				<a class="addthis_button_google_plusone_share"></a>
-				<a class="addthis_button_compact"></a>
+		<div id="content-body-info">
+			<div id="content-body-text">
+				<div class="content-body-tagline">How Far Can You Fetch?<br></div>
+				<div class="content-body-text"><p><br>&emsp; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br></div>
+				<form action="MAILTO:farfetch.info@gmail.com" method="POST" enctype="text/plain" align="center">
+					E-mail: <br><input type="text" name="mail" value="farfetchapp@gmail.com">
+					<input type="submit" value="Send">
+					<input type="reset" value="Reset">
+				</form>
+				<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521275ac25e4406f"></script>
 			</div>
+		</div>
 		<div id="carousel">
 		</div>
 	</div>
-		<div id="footer">
-			<div class="footer-text" id="footer-links">
-				<a href="http://www.twitter.com/FarfetchApp">ABOUT US</a> | 
-				<a href="http://www.twitter.com/FarfetchApp">SUPPORT</a> | 
-				<a href="http://www.twitter.com/FarfetchApp">BLOG</a> | 
-				<a href="http://www.twitter.com/FarfetchApp">PRESS</a> | 
-				<a href="http://www.twitter.com/FarfetchApp">API</a> | 
-				<a href="http://www.twitter.com/FarfetchApp">JOBS</a> | 
-				<a href="http://www.twitter.com/FarfetchApp">PRIVACY</a> | 
-				<a href="http://www.twitter.com/FarfetchApp">TERMS</a>
-			</div>
-			<div class="footer-text" id="copyright">
-				© 2013 FARFETCH
-			</div>
+	<div id="footer">
+		<div class="footer-text" id="footer-links">
+			<a href="http://www.twitter.com/FarfetchApp">ABOUT US</a> | 
+			<a href="http://www.twitter.com/FarfetchApp">SUPPORT</a> | 
+			<a href="http://www.twitter.com/FarfetchApp">BLOG</a> | 
+			<a href="http://www.twitter.com/FarfetchApp">PRESS</a> | 
+			<a href="http://www.twitter.com/FarfetchApp">API</a> | 
+			<a href="http://www.twitter.com/FarfetchApp">JOBS</a> | 
+			<a href="http://www.twitter.com/FarfetchApp">PRIVACY</a> | 
+			<a href="http://www.twitter.com/FarfetchApp">TERMS</a>
+		</div>
+		<div class="footer-text" id="copyright">
+			© 2013 FARFETCH
 		</div>
 	</div>
 </body>
